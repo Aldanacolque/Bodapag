@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+/* Reseteo CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* Fuentes de letras */
+
+  font-family: "Tilt Neon", sans-serif;
+}
+
+:root {
+  --primary-color-bg: #dfcae1;
+  --secondary-color: #ff77af;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--primary-color-bg);
+  position: relative;
+  width: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav > ul.main-menu {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  list-style-type: none;
+}
+
+header > img {
+  width: 35px;
+}
+
+ul.main-menu > li.menu-item > a {
+  transition: 200ms ease-in-out;
+}
+
+ul.main-menu > li.menu-item > a:hover {
+  color: var(--secondary-color);
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+main > section.hero {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+div.left-hero {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 12px;
+}
+
+div.left-hero > .title-hero {
+  font-size: 48px;
+  text-align: center;
+}
+
+div.left-hero a.button-hero {
+  padding: 12px;
+  border-radius: 24px;
+  width: fit-content;
+  background-color: var(--primary-color-bg);
+  align-self: center;
+  transition: 200ms ease-in-out;
+}
+
+div.left-hero a.button-hero:hover {
+  transform: scale(1.1);
+  color: var(--secondary-color);
+}
+
+div.right-hero {
+  padding: 24px;
+}
+
+div.right-hero img {
+  width: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+main > section.about {
+  background-color: var(--primary-color-bg);
+  width: auto;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+main > section.about > p {
+  width: 60%;
+  text-align: center;
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  width: 70%;
+}
+
+.card {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 35px 35px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--primary-color-bg);
+  width: 240px;
+  box-shadow: 2px 2px 2px #00000040;
+}
+
+.card img {
+  height: 250px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-top,
+.card-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bot {
+  display: flex;
+  align-self: flex-end;
+  background-color: #fff;
+  border-radius: 24px;
+  transition: 100ms;
+}
+
+.card-bot:hover {
+  box-shadow: 2px 2px 2px #00000040;
+
+  background-color: pink;
+}
+
+.card-top h3 {
+  font-size: var(--font-sd);
+  font-weight: var(--font-semibold);
+}
+
+.card-top p,
+.card-user p {
+  color: var(--text-gray);
+}
+
+.card-user,
+.offer-time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-mid span {
+  font-weight: var(--font-bold);
+}
+
+.offer-time {
+  font-weight: var(--font-semibold);
+}
+
+.offer-time img {
+  width: 20px;
+}
+
+.btn-add {
+  background: var(--primary);
+  border: none;
+  color: var(--text-white);
+  padding: 10px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-load {
+  border: 1px solid var(--electric);
+  background: none;
+  color: var(--text-white);
+  padding: 10px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+section.form {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: #dfcae1;
+  padding: 24px;
+  border-radius: 24px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact button {
+  width: max-content;
+  padding: 8px;
+  align-self: center;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #dfcae1;
+  padding: 24px;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-izq .footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-izq .footer-list li > a {
+  width: max-content;
+  transition: 200ms;
+}
+
+.footer-izq .footer-list li > a:hover {
+  color: #fff;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-der .footer-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-der .footer-list li > a:hover {
+  color: #fff;
+}
+
+.footer-der .footer-list li > a {
+  width: max-content;
+  transition: 200ms;
+}
+
+@media (max-width: 992px) {
+  .menu-label {
+    display: flex;
+    order: 2;
+  }
+
+  .menu-label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .navbar {
+    gap: 30px;
+  }
+
+  nav > ul.main-menu {
+    position: absolute;
+    top: 65px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--primary-color-bg);
+    border-top: 0;
+    padding: 45px 30px;
+    border-radius: 0 0 15px 15px;
+    display: none;
+  }
+
+  #menu-toggle:checked ~ ul.main-menu {
+    display: flex;
+  }
+
+  header {
+    position: relative;
+  }
+
+  main > section.hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  main > section.about > p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  div.left-hero > .title-hero {
+    font-size: 24px;
+  }
+
+  div.right-hero img {
+    width: 200px;
+  }
+
+  main > section.about {
+    height: auto;
+  }
+
+  main > section.about > p {
+    width: 80%;
+    height: auto;
+  }
+
+  div.left-hero {
+    width: auto;
+  }
+}
